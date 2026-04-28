@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<h1>hello</h1>
+<canvas id="mychart" height="200" width="400"></canvas>
+<script>
+	const ctx= document.getElementById('mychart')
+	const mychat=new Chart( ctx,{
+		type: 'bar',
+		data:{
+			labels:['maths','science','history'],
+			datasets:[{
+			label:'marks",
+			data:[54,56,85],
+			borderWidth:1
+			}]
+		     },
+		options:{
+			scales:{
+				y:{
+					beginAtZero:true
+				  }
+			        }
+			}
+});
+</script>
+</body>
+</html>
